@@ -78,7 +78,7 @@
                                                                     // Use 1000Hz to get mSec timing.
 
 //	#define configCPU_CLOCK_HZ		( ( uint32_t ) F_CPU)			// This define set by Eclipse environment
-	#define configCPU_CLOCK_HZ		( ( uint32_t ) 2000000 )		// Arduino Mega2560 Rev3
+	#define configCPU_CLOCK_HZ		( ( uint32_t ) 16000000 )		// Arduino Mega2560 Rev3
 
 
 //	XRAM device options. Different methods of enabling and driving.    MegaRAM only implemented for two banks of 56kByte currently.
