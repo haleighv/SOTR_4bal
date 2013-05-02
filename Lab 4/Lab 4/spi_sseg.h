@@ -19,9 +19,9 @@
 //-    PB5 as the MOSI output
 //-    PB7 as the clock output
 //----------------------------------------------
-#define SPI_SS     4
-#define SPI_MOSI   5
-#define SPI_SCK    7
+#define SPI_SS     0
+#define SPI_MOSI   2
+#define SPI_SCK    1
 
 // various escape code stuff for the 7-seg display
 #define SSEG_BRIGHTNESS  0x7A 

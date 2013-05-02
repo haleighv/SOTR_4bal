@@ -28,13 +28,16 @@
 //---------------------------------------------------------------
 void SPI_MasterInit(void)
 {
-	SPCR |= ((1 << SPE) | (1 << SPIE) | (1 << MSTR) | (1 << SPR1) | (1 << SPR0)); 
-	SPSR |=  1 << SPI2X; 
+	//SPCR |= ((1 << SPE) | (1 << SPIE) | (1 << MSTR) | (1 << SPR1) | (1 << SPR0)); 
+	//SPSR |=  1 << SPI2X; 
 	
-	
+	DDRB = ((1 << SPI_SS) | (1 << SPI_MOSI) | (1 << SPI_SCK)); 
+	//make sure SS is high
+	PORTB |= (1 << SPI_SS);
+
 	SPCR =  (0<<SPIE) |	//No interrupts
 		    (1<<SPE)  |	//SPI enabled
-			(1<<DORD) |	//shifted out MSB
+			(0<<DORD) |	//shifted out MSB
 			(1<<MSTR) |	//master
 			(0<<CPOL) |	//rising leading edge
 			(0<<CPHA) |	//sample leading edge
@@ -45,9 +48,8 @@ void SPI_MasterInit(void)
 			(0<<WCOL) |	//Write collision flag
 			(1<<SPI2X);	//Doubles SPI clock
 			
-	DDRB = ((1 << SPI_SS) | (1 << SPI_MOSI) | (1 << SPI_SCK)); //make sure SS is high
-	PORTB = (1 << SPI_SS);
 	
+	SSEG_Set_Brightness(10);
 }
 
 //--------------------------------------------------------------
@@ -62,7 +64,7 @@ void SPI_MasterInit(void)
 //---------------------------------------------------------------
 void SPI_MasterTransmit(uint8_t data)
 {
-	xSemaphoreTake( xMutex, portMAX_DELAY);
+	//xSemaphoreTake( xMutex, portMAX_DELAY);
 	
 	//set SS low
 	PORTB &= ~(1 << SPI_SS);
@@ -71,9 +73,9 @@ void SPI_MasterTransmit(uint8_t data)
 	//wait for spi interrupt flag to signal complete transfer
 	while (!(SPSR & (1 << SPIF))); 
 	//Set SS high 
-	PORTB = (1 << SPI_SS);	
+	PORTB |= (1 << SPI_SS);	
 	
-	xSemaphoreGive( xMutex );
+	//xSemaphoreGive( xMutex );
 }
 
 
@@ -90,7 +92,7 @@ void SPI_MasterTransmit(uint8_t data)
 void SSEG_Set_Brightness(uint8_t val)
 {
 	SPI_MasterTransmit(SSEG_BRIGHTNESS);	
-	SPI_MasterTransmit(val);	
+	SPI_MasterTransmit(val);
 }
 
 
@@ -195,13 +197,9 @@ void SSEG_Write_left_digits(uint8_t val)
 	//2 digits of 7seg can display up to 99. Check bounds of 'val'
 	if(val < 100)
 	{
-		//subtract from tens place until it's zero to determine
-		//tens and ones place digits
-		while((dig_ones_place - 10) >= 0)
-		{
-			dig_ones_place -= 10;
-			dig_tens_place++;
-		}
+		dig_tens_place = val / 10;
+		dig_ones_place = val % 10;
+		
 		SPI_MasterTransmit(DIGIT_1);
 		SPI_MasterTransmit(dig_tens_place);
 		SPI_MasterTransmit(DIGIT_2);

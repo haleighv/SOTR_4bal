@@ -1,5 +1,7 @@
 Archive member included because of file (symbol)
 
+c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
+                              spi_sseg.o (__udivmodqi4)
 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
                               c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6/crtm2560.o (exit)
 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
@@ -141,7 +143,7 @@ LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x20c2
+.text           0x00000000     0x20e2
  *(.vectors)
  .vectors       0x00000000       0xe4 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6/crtm2560.o
                 0x00000000                __vector_default
@@ -265,99 +267,102 @@ LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1
                 0x000005ea                vPortFree
                 0x000005ec                vPortInitialiseBlocks
                 0x000005f6                xPortGetFreeHeapSize
- .text          0x00000608      0x134 lab4_main.o
-                0x00000608                main
-                0x0000065a                vTaskFunction_timerHandler
-                0x000006c8                __vector_13
-                0x0000073a                vApplicationTickHook
- .text          0x0000073c      0x13e list.o
-                0x0000073c                vListInitialise
-                0x00000758                vListInitialiseItem
-                0x00000760                vListInsertEnd
-                0x000007b2                vListInsert
-                0x0000082c                uxListRemove
- .text          0x0000087a      0x33e port.o
-                0x0000087a                pxPortInitialiseStack
-                0x000009ac                xPortStartScheduler
-                0x00000a28                vPortEndScheduler
-                0x00000a2a                vPortYield
-                0x00000aec                vPortYieldFromTick
-                0x00000bb2                __vector_32
- .text          0x00000bb8      0x6be queue.o
-                0x00000d4a                xQueueGenericReset
-                0x00000dd6                xQueueGenericCreate
-                0x00000e38                xQueueGenericSend
-                0x00000f74                xQueueCreateMutex
-                0x00000fce                xQueueGenericSendFromISR
-                0x00001032                xQueueGenericReceive
-                0x000011c6                xQueueReceiveFromISR
-                0x0000122c                uxQueueMessagesWaiting
-                0x0000123c                uxQueueMessagesWaitingFromISR
-                0x00001242                vQueueDelete
-                0x0000125c                xQueueIsQueueEmptyFromISR
-                0x00001268                xQueueIsQueueFullFromISR
- .text          0x00001276      0x1be spi_sseg.o
-                0x00001276                SPI_MasterInit
-                0x00001294                SPI_MasterTransmit
-                0x000012a4                SSEG_Set_Brightness
-                0x000012b8                SSEG_Reset
-                0x000012c0                SSEG_Write_4vals_array
-                0x000012de                SSEG_Write_digit
-                0x00001334                SSEG_Write_left_digits
-                0x0000137a                SSEG_Write_right_digits
-                0x000013c0                SSEG_Write_Decimal_Point
- .text          0x00001434      0xc4c tasks.o
-                0x000014b2                xTaskGenericCreate
-                0x000016e2                xTaskIsTaskSuspended
-                0x00001710                vTaskResume
-                0x00001796                xTaskResumeFromISR
-                0x00001828                vTaskStartScheduler
-                0x0000187e                vTaskEndScheduler
-                0x0000188a                vTaskSuspendAll
-                0x00001896                xTaskGetTickCount
-                0x000018aa                xTaskGetTickCountFromISR
-                0x000018b4                uxTaskGetNumberOfTasks
-                0x000018ba                vTaskIncrementTick
-                0x00001a56                xTaskResumeAll
-                0x00001b76                vTaskDelay
-                0x00001bb6                vTaskDelayUntil
-                0x00001c4a                vTaskSwitchContext
-                0x00001d04                vTaskSuspend
-                0x00001da4                vTaskPlaceOnEventList
-                0x00001dfc                xTaskRemoveFromEventList
-                0x00001e8c                vTaskSetTimeOutState
-                0x00001ea2                xTaskCheckForTimeOut
-                0x00001f1e                vTaskMissedYield
-                0x00001f26                uxTaskGetStackHighWaterMark
-                0x00001f58                xTaskGetCurrentTaskHandle
-                0x00001f62                vTaskPriorityInherit
-                0x00002016                vTaskPriorityDisinherit
- .text          0x00002080        0x0 timers.o
- .text          0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
- .text          0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
- .text          0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
- .text          0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memcpy.o)
- .text          0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memset.o)
- .text          0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(strncpy.o)
-                0x00002080                . = ALIGN (0x2)
+ .text          0x00000608      0x160 lab4_main.o
+                0x00000608                vTaskFunction_timerHandler
+                0x00000680                main
+                0x000006f4                __vector_13
+                0x00000766                vApplicationTickHook
+ .text          0x00000768      0x13e list.o
+                0x00000768                vListInitialise
+                0x00000784                vListInitialiseItem
+                0x0000078c                vListInsertEnd
+                0x000007de                vListInsert
+                0x00000858                uxListRemove
+ .text          0x000008a6      0x33e port.o
+                0x000008a6                pxPortInitialiseStack
+                0x000009d8                xPortStartScheduler
+                0x00000a54                vPortEndScheduler
+                0x00000a56                vPortYield
+                0x00000b18                vPortYieldFromTick
+                0x00000bde                __vector_32
+ .text          0x00000be4      0x6be queue.o
+                0x00000d76                xQueueGenericReset
+                0x00000e02                xQueueGenericCreate
+                0x00000e64                xQueueGenericSend
+                0x00000fa0                xQueueCreateMutex
+                0x00000ffa                xQueueGenericSendFromISR
+                0x0000105e                xQueueGenericReceive
+                0x000011f2                xQueueReceiveFromISR
+                0x00001258                uxQueueMessagesWaiting
+                0x00001268                uxQueueMessagesWaitingFromISR
+                0x0000126e                vQueueDelete
+                0x00001288                xQueueIsQueueEmptyFromISR
+                0x00001294                xQueueIsQueueFullFromISR
+ .text          0x000012a2      0x19a spi_sseg.o
+                0x000012a2                SPI_MasterTransmit
+                0x000012b0                SSEG_Set_Brightness
+                0x000012c4                SPI_MasterInit
+                0x000012da                SSEG_Reset
+                0x000012e2                SSEG_Write_4vals_array
+                0x00001300                SSEG_Write_digit
+                0x00001356                SSEG_Write_left_digits
+                0x00001382                SSEG_Write_right_digits
+                0x000013c8                SSEG_Write_Decimal_Point
+ .text          0x0000143c      0xc4c tasks.o
+                0x000014ba                xTaskGenericCreate
+                0x000016ea                xTaskIsTaskSuspended
+                0x00001718                vTaskResume
+                0x0000179e                xTaskResumeFromISR
+                0x00001830                vTaskStartScheduler
+                0x00001886                vTaskEndScheduler
+                0x00001892                vTaskSuspendAll
+                0x0000189e                xTaskGetTickCount
+                0x000018b2                xTaskGetTickCountFromISR
+                0x000018bc                uxTaskGetNumberOfTasks
+                0x000018c2                vTaskIncrementTick
+                0x00001a5e                xTaskResumeAll
+                0x00001b7e                vTaskDelay
+                0x00001bbe                vTaskDelayUntil
+                0x00001c52                vTaskSwitchContext
+                0x00001d0c                vTaskSuspend
+                0x00001dac                vTaskPlaceOnEventList
+                0x00001e04                xTaskRemoveFromEventList
+                0x00001e94                vTaskSetTimeOutState
+                0x00001eaa                xTaskCheckForTimeOut
+                0x00001f26                vTaskMissedYield
+                0x00001f2e                uxTaskGetStackHighWaterMark
+                0x00001f60                xTaskGetCurrentTaskHandle
+                0x00001f6a                vTaskPriorityInherit
+                0x0000201e                vTaskPriorityDisinherit
+ .text          0x00002088        0x0 timers.o
+ .text          0x00002088        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
+ .text          0x00002088        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+ .text          0x00002088        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+ .text          0x00002088        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
+ .text          0x00002088        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memcpy.o)
+ .text          0x00002088        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memset.o)
+ .text          0x00002088        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(strncpy.o)
+                0x00002088                . = ALIGN (0x2)
  *(.text.*)
- .text.libgcc   0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
- .text.libgcc   0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
- .text.libgcc   0x00002080        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00002088       0x18 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
+                0x00002088                __udivmodqi4
+ .text.libgcc   0x000020a0        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+ .text.libgcc   0x000020a0        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000020a0        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
  .text.avr-libc
-                0x00002080       0x12 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memcpy.o)
-                0x00002080                memcpy
+                0x000020a0       0x12 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memcpy.o)
+                0x000020a0                memcpy
  .text.avr-libc
-                0x00002092        0xe c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memset.o)
-                0x00002092                memset
+                0x000020b2        0xe c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memset.o)
+                0x000020b2                memset
  .text.avr-libc
-                0x000020a0       0x1e c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(strncpy.o)
-                0x000020a0                strncpy
-                0x000020be                . = ALIGN (0x2)
+                0x000020c0       0x1e c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(strncpy.o)
+                0x000020c0                strncpy
+                0x000020de                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000020be        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
-                0x000020be                _exit
-                0x000020be                exit
+ .fini9         0x000020de        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+                0x000020de                _exit
+                0x000020de                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -376,75 +381,76 @@ LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000020be        0x4 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+ .fini0         0x000020de        0x4 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
  *(.fini0)
-                0x000020c2                _etext = .
+                0x000020e2                _etext = .
 
-.data           0x00800200        0x8 load address 0x000020c2
+.data           0x00800200       0x10 load address 0x000020e2
                 0x00800200                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800200        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6/crtm2560.o
  .data          0x00800200        0x0 init.o
  .data          0x00800200        0x0 croutine.o
  .data          0x00800200        0x0 heap_1.o
- .data          0x00800200        0x0 lab4_main.o
- .data          0x00800200        0x0 list.o
- .data          0x00800200        0x0 port.o
- .data          0x00800200        0x0 queue.o
- .data          0x00800200        0x0 spi_sseg.o
- .data          0x00800200        0x7 tasks.o
- .data          0x00800207        0x0 timers.o
- .data          0x00800207        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
- .data          0x00800207        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
- .data          0x00800207        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
- .data          0x00800207        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memcpy.o)
- .data          0x00800207        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memset.o)
- .data          0x00800207        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(strncpy.o)
+ .data          0x00800200        0x9 lab4_main.o
+ .data          0x00800209        0x0 list.o
+ .data          0x00800209        0x0 port.o
+ .data          0x00800209        0x0 queue.o
+ .data          0x00800209        0x0 spi_sseg.o
+ .data          0x00800209        0x7 tasks.o
+ .data          0x00800210        0x0 timers.o
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memcpy.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memset.o)
+ .data          0x00800210        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(strncpy.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x00800208                . = ALIGN (0x2)
- *fill*         0x00800207        0x1 00
-                0x00800208                _edata = .
-                0x00800208                PROVIDE (__data_end, .)
+                0x00800210                . = ALIGN (0x2)
+                0x00800210                _edata = .
+                0x00800210                PROVIDE (__data_end, .)
 
-.bss            0x00800208     0x189b
-                0x00800208                PROVIDE (__bss_start, .)
+.bss            0x00800210     0x189b
+                0x00800210                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x00800208        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6/crtm2560.o
- .bss           0x00800208        0x0 init.o
- .bss           0x00800208       0x3a croutine.o
-                0x00800208                pxCurrentCoRoutine
- .bss           0x00800242     0x1802 heap_1.o
- .bss           0x00801a44        0x4 lab4_main.o
- .bss           0x00801a48        0x0 list.o
- .bss           0x00801a48        0x0 port.o
- .bss           0x00801a48        0x0 queue.o
- .bss           0x00801a48        0x0 spi_sseg.o
- .bss           0x00801a48       0x59 tasks.o
-                0x00801a48                pxCurrentTCB
- .bss           0x00801aa1        0x0 timers.o
- .bss           0x00801aa1        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
- .bss           0x00801aa1        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
- .bss           0x00801aa1        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
- .bss           0x00801aa1        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memcpy.o)
- .bss           0x00801aa1        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memset.o)
- .bss           0x00801aa1        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(strncpy.o)
+ .bss           0x00800210        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6/crtm2560.o
+ .bss           0x00800210        0x0 init.o
+ .bss           0x00800210       0x3a croutine.o
+                0x00800210                pxCurrentCoRoutine
+ .bss           0x0080024a     0x1802 heap_1.o
+ .bss           0x00801a4c        0x4 lab4_main.o
+ .bss           0x00801a50        0x0 list.o
+ .bss           0x00801a50        0x0 port.o
+ .bss           0x00801a50        0x0 queue.o
+ .bss           0x00801a50        0x0 spi_sseg.o
+ .bss           0x00801a50       0x59 tasks.o
+                0x00801a50                pxCurrentTCB
+ .bss           0x00801aa9        0x0 timers.o
+ .bss           0x00801aa9        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
+ .bss           0x00801aa9        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+ .bss           0x00801aa9        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+ .bss           0x00801aa9        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
+ .bss           0x00801aa9        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memcpy.o)
+ .bss           0x00801aa9        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(memset.o)
+ .bss           0x00801aa9        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr6\libc.a(strncpy.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x00801aa1        0x2 lab4_main.o
-                0x00801aa1                xBinarySemaphore_timer
-                0x00801aa3                PROVIDE (__bss_end, .)
-                0x000020c2                __data_load_start = LOADADDR (.data)
-                0x000020ca                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00801aa9        0x2 lab4_main.o
+                0x00801aa9                xBinarySemaphore_timer
+                0x00801aab                PROVIDE (__bss_end, .)
+                0x000020e2                __data_load_start = LOADADDR (.data)
+                0x000020f2                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00801aa3        0x0
-                0x00801aa3                PROVIDE (__noinit_start, .)
+.noinit         0x00801aab        0x0
+                0x00801aab                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00801aa3                PROVIDE (__noinit_end, .)
-                0x00801aa3                _end = .
-                0x00801aa3                PROVIDE (__heap_start, .)
+                0x00801aab                PROVIDE (__noinit_end, .)
+                0x00801aab                _end = .
+                0x00801aab                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -503,7 +509,7 @@ LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x180
+.debug_aranges  0x00000000      0x1a0
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x20 init.o
@@ -524,109 +530,114 @@ LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1
  .debug_aranges
                 0x00000100       0x20 tasks.o
  .debug_aranges
-                0x00000120       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+                0x00000120       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
  .debug_aranges
-                0x00000140       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+                0x00000140       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
  .debug_aranges
-                0x00000160       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
+                0x00000160       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x00000180       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x2851
+.debug_info     0x00000000     0x288b
  *(.debug_info)
  .debug_info    0x00000000       0x93 init.o
  .debug_info    0x00000093      0x51e croutine.o
  .debug_info    0x000005b1      0x16a heap_1.o
- .debug_info    0x0000071b      0x22f lab4_main.o
- .debug_info    0x0000094a      0x2ab list.o
- .debug_info    0x00000bf5      0x1ee port.o
- .debug_info    0x00000de3      0x811 queue.o
- .debug_info    0x000015f4      0x20e spi_sseg.o
- .debug_info    0x00001802      0xd4c tasks.o
- .debug_info    0x0000254e       0x6c timers.o
- .debug_info    0x000025ba       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
- .debug_info    0x00002697       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
- .debug_info    0x00002774       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
+ .debug_info    0x0000071b      0x187 lab4_main.o
+ .debug_info    0x000008a2      0x2ab list.o
+ .debug_info    0x00000b4d      0x1ee port.o
+ .debug_info    0x00000d3b      0x811 queue.o
+ .debug_info    0x0000154c      0x213 spi_sseg.o
+ .debug_info    0x0000175f      0xd4c tasks.o
+ .debug_info    0x000024ab       0x6c timers.o
+ .debug_info    0x00002517       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
+ .debug_info    0x000025f4       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+ .debug_info    0x000026d1       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+ .debug_info    0x000027ae       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev   0x00000000      0xba9
+.debug_abbrev   0x00000000      0xb47
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0x4c init.o
  .debug_abbrev  0x0000004c      0x1dc croutine.o
  .debug_abbrev  0x00000228      0x10b heap_1.o
- .debug_abbrev  0x00000333      0x146 lab4_main.o
- .debug_abbrev  0x00000479       0xed list.o
- .debug_abbrev  0x00000566       0xfa port.o
- .debug_abbrev  0x00000660      0x180 queue.o
- .debug_abbrev  0x000007e0       0xe3 spi_sseg.o
- .debug_abbrev  0x000008c3      0x280 tasks.o
- .debug_abbrev  0x00000b43       0x2a timers.o
- .debug_abbrev  0x00000b6d       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
- .debug_abbrev  0x00000b81       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
- .debug_abbrev  0x00000b95       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x00000333       0xc1 lab4_main.o
+ .debug_abbrev  0x000003f4       0xed list.o
+ .debug_abbrev  0x000004e1       0xfa port.o
+ .debug_abbrev  0x000005db      0x180 queue.o
+ .debug_abbrev  0x0000075b       0xf2 spi_sseg.o
+ .debug_abbrev  0x0000084d      0x280 tasks.o
+ .debug_abbrev  0x00000acd       0x2a timers.o
+ .debug_abbrev  0x00000af7       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
+ .debug_abbrev  0x00000b0b       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+ .debug_abbrev  0x00000b1f       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x00000b33       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
 
-.debug_line     0x00000000     0x114a
+.debug_line     0x00000000     0x1123
  *(.debug_line)
  .debug_line    0x00000000       0xdc init.o
  .debug_line    0x000000dc      0x129 croutine.o
  .debug_line    0x00000205       0xe2 heap_1.o
- .debug_line    0x000002e7      0x212 lab4_main.o
- .debug_line    0x000004f9       0xb7 list.o
- .debug_line    0x000005b0      0x186 port.o
- .debug_line    0x00000736      0x277 queue.o
- .debug_line    0x000009ad      0x151 spi_sseg.o
- .debug_line    0x00000afe      0x486 tasks.o
- .debug_line    0x00000f84       0x1a timers.o
- .debug_line    0x00000f9e       0x88 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
- .debug_line    0x00001026       0x96 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
- .debug_line    0x000010bc       0x8e c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
+ .debug_line    0x000002e7      0x162 lab4_main.o
+ .debug_line    0x00000449       0xb7 list.o
+ .debug_line    0x00000500      0x186 port.o
+ .debug_line    0x00000686      0x277 queue.o
+ .debug_line    0x000008fd      0x148 spi_sseg.o
+ .debug_line    0x00000a45      0x486 tasks.o
+ .debug_line    0x00000ecb       0x1a timers.o
+ .debug_line    0x00000ee5       0x92 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_udivmodqi4.o)
+ .debug_line    0x00000f77       0x88 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_exit.o)
+ .debug_line    0x00000fff       0x96 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_copy_data.o)
+ .debug_line    0x00001095       0x8e c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr6\libgcc.a(_clear_bss.o)
 
-.debug_frame    0x00000000      0x93c
+.debug_frame    0x00000000      0x95c
  *(.debug_frame)
  .debug_frame   0x00000000       0x34 init.o
  .debug_frame   0x00000034       0xd8 croutine.o
  .debug_frame   0x0000010c       0x68 heap_1.o
- .debug_frame   0x00000174       0xac lab4_main.o
- .debug_frame   0x00000220       0x7c list.o
- .debug_frame   0x0000029c       0x74 port.o
- .debug_frame   0x00000310      0x210 queue.o
- .debug_frame   0x00000520       0xdc spi_sseg.o
- .debug_frame   0x000005fc      0x340 tasks.o
+ .debug_frame   0x00000174       0xd0 lab4_main.o
+ .debug_frame   0x00000244       0x7c list.o
+ .debug_frame   0x000002c0       0x74 port.o
+ .debug_frame   0x00000334      0x210 queue.o
+ .debug_frame   0x00000544       0xd8 spi_sseg.o
+ .debug_frame   0x0000061c      0x340 tasks.o
 
-.debug_str      0x00000000     0x10f0
+.debug_str      0x00000000     0x1112
  *(.debug_str)
  .debug_str     0x00000000       0xd3 init.o
                                 0x107 (size before relaxing)
- .debug_str     0x000000d3      0x353 croutine.o
-                                0x43e (size before relaxing)
- .debug_str     0x00000426       0x9a heap_1.o
-                                0x18a (size before relaxing)
- .debug_str     0x000004c0      0x11c lab4_main.o
-                                0x23a (size before relaxing)
- .debug_str     0x000005dc       0xa0 list.o
-                                0x21b (size before relaxing)
- .debug_str     0x0000067c       0xe4 port.o
-                                0x1f2 (size before relaxing)
- .debug_str     0x00000760      0x311 queue.o
-                                0x4db (size before relaxing)
- .debug_str     0x00000a71       0xe9 spi_sseg.o
-                                0x1cf (size before relaxing)
- .debug_str     0x00000b5a      0x588 tasks.o
-                                0x81b (size before relaxing)
- .debug_str     0x000010e2        0xe timers.o
-                                 0xfe (size before relaxing)
+ .debug_str     0x000000d3      0x3bf croutine.o
+                                0x445 (size before relaxing)
+ .debug_str     0x00000492       0x9a heap_1.o
+                                0x191 (size before relaxing)
+ .debug_str     0x0000052c       0xc9 lab4_main.o
+                                0x1ee (size before relaxing)
+ .debug_str     0x000005f5       0xa0 list.o
+                                0x222 (size before relaxing)
+ .debug_str     0x00000695       0xed port.o
+                                0x1f9 (size before relaxing)
+ .debug_str     0x00000782      0x311 queue.o
+                                0x4e2 (size before relaxing)
+ .debug_str     0x00000a93       0xe9 spi_sseg.o
+                                0x1db (size before relaxing)
+ .debug_str     0x00000b7c      0x588 tasks.o
+                                0x822 (size before relaxing)
+ .debug_str     0x00001104        0xe timers.o
+                                0x105 (size before relaxing)
 
-.debug_loc      0x00000000     0x26e1
+.debug_loc      0x00000000     0x2696
  *(.debug_loc)
  .debug_loc     0x00000000      0x3e0 croutine.o
  .debug_loc     0x000003e0       0xb1 heap_1.o
- .debug_loc     0x00000491      0x1c2 lab4_main.o
- .debug_loc     0x00000653      0x17e list.o
- .debug_loc     0x000007d1      0x2b4 port.o
- .debug_loc     0x00000a85      0xa24 queue.o
- .debug_loc     0x000014a9      0x2dd spi_sseg.o
- .debug_loc     0x00001786      0xf5b tasks.o
+ .debug_loc     0x00000491      0x19b lab4_main.o
+ .debug_loc     0x0000062c      0x17e list.o
+ .debug_loc     0x000007aa      0x2b5 port.o
+ .debug_loc     0x00000a5f      0xa24 queue.o
+ .debug_loc     0x00001483      0x2b8 spi_sseg.o
+ .debug_loc     0x0000173b      0xf5b tasks.o
 
 .debug_macinfo
  *(.debug_macinfo)
