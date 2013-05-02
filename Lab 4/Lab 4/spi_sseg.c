@@ -258,41 +258,8 @@ void SSEG_Write_right_digits(uint8_t val)
 //---------------------------------------------------------------
 void SSEG_Write_Decimal_Point(uint8_t val)
 {
-	switch(val)
-	{
-		case 0:
-			SPI_MasterTransmit(SSEG_DEC_PNT);
-			SPI_MasterTransmit(SSEG_DP_0);			
-			break;
-			
-		case 1:
-			SPI_MasterTransmit(SSEG_DEC_PNT);
-			SPI_MasterTransmit(SSEG_DP_1);
-			break;
-			
-		case 2:
-			SPI_MasterTransmit(SSEG_DEC_PNT);
-			SPI_MasterTransmit(SSEG_DP_2);
-			break;
-			
-		case 3:
-			SPI_MasterTransmit(SSEG_DEC_PNT);
-			SPI_MasterTransmit(SSEG_DP_3);
-			break;
-			
-		case 4:
-			SPI_MasterTransmit(SSEG_DEC_PNT);
-			SPI_MasterTransmit(SSEG_DP_4);
-			break;
-			
-		case 5:
-			SPI_MasterTransmit(SSEG_DEC_PNT);
-			SPI_MasterTransmit(SSEG_DP_5);
-			break;
-			
-		default:
-			break;
-	}			
+	SPI_MasterTransmit(SSEG_DEC_PNT);
+	SPI_MasterTransmit(val);
 }
 
 

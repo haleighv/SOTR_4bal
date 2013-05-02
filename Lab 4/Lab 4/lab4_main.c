@@ -128,18 +128,18 @@ void vTaskFunction_timerHandler(void *pvNada)
 		task_cnt ^= 1;
 		if(task_cnt)
 		{
+			PORTA ^= (1 << LED0);//Toggle LED0
 			if (sseg_cnt_L == MAX_COUNT)
 				sseg_cnt_L = 0;
 			else
-				sseg_cnt_L++;	
-			PORTA ^= (1 << LED0);//Toggle LED0
+				sseg_cnt_L++;
 		}		
 		
+		PORTA ^= (1 << LED2);//Toggle LED2
 		if (sseg_cnt_R == MAX_COUNT)
 			sseg_cnt_R = 0;
 		else
 			sseg_cnt_R++;
-		PORTA ^= (1 << LED2);//Toggle LED2
 		
 		//TCNT2 = 0;
 		vTaskDelayUntil(&xLastExecutionTime, DELAY_MS_10HZ/portTICK_RATE_MS);
@@ -172,15 +172,15 @@ ISR(TIMER2_COMPA_vect)
 
 void vApplicationTickHook( void )
 {
-	//static uint16_t count = 0;
-	//count ++;
-	//if(count == 500)
-	//{
-		//SSEG_Write_Decimal_Point(0x00);
-	//}
-	//else if(count == 1000)
-	//{
-		//count = 0;
-		//SSEG_Write_Decimal_Point(SSEG_DP_4_val);
-	//}		
+	static uint16_t count = 0;
+	count++;
+	if(count == 500)
+	{
+		SSEG_Write_Decimal_Point(0x00);
+	}
+	else if(count == 1000)
+	{
+		count = 0;
+		SSEG_Write_Decimal_Point(SSEG_DP_4);
+	}
 }
