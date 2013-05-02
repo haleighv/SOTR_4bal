@@ -43,10 +43,12 @@
 #define DELAY_MS_4HZ 125
 #define DELAY_MS_7HZ 71
 #define DELAY_MS_8HZ 63
+#define DELAY_MS_10HZ 50
 #define DELAY_MS_14HZ 36
 #define DEBOUNCE_DELAY 20
 #define LED2 2
 #define LED0 0
+#define MAX_COUNT 99
 
 //-----------------Function Prototypes-------------------//
 void vTaskFunction_timerHandler(void *pvNada);
@@ -119,28 +121,28 @@ void vTaskFunction_timerHandler(void *pvNada)
 	for(;;)
 	{	
 		//xSemaphoreTake( xBinarySemaphore_timer, portMAX_DELAY );
-		PORTA ^= (1 << LED2);//Toggle LED2
 		
 		SSEG_Write_left_digits(sseg_cnt_L);
 		SSEG_Write_right_digits(sseg_cnt_R);
+		
 		task_cnt ^= 1;
 		if(task_cnt)
 		{
-			if(sseg_cnt_L == 100)
+			if (sseg_cnt_L == MAX_COUNT)
 				sseg_cnt_L = 0;
 			else
-				sseg_cnt_L++;
-				
+				sseg_cnt_L++;	
 			PORTA ^= (1 << LED0);//Toggle LED0
 		}		
 		
-		if(sseg_cnt_R == 100)
+		if (sseg_cnt_R == MAX_COUNT)
 			sseg_cnt_R = 0;
 		else
 			sseg_cnt_R++;
+		PORTA ^= (1 << LED2);//Toggle LED2
 		
 		//TCNT2 = 0;
-		vTaskDelayUntil(&xLastExecutionTime, 500/portTICK_RATE_MS);
+		vTaskDelayUntil(&xLastExecutionTime, DELAY_MS_10HZ/portTICK_RATE_MS);
 	}
 }
 

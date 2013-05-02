@@ -17,7 +17,7 @@
 #include <avr/io.h>
 
 //OCR_value = clk_freq / prescaler / desired_frequency / #clk_edges
-#define TIMER2_10Hz 96 //Value for OCR2A corresponding to 10Hz
+#define TIMER2_10Hz 781 //Value for OCR2A corresponding to 10Hz
 
 //-----------------Function Prototypes-------------------//
 //Function used to configure IOs
