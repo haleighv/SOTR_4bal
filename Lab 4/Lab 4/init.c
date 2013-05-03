@@ -35,23 +35,3 @@ void vIO_init(void)
 	// Turn LEDs off
 	PORTA = 0xFF;
 }
-
-
-/*-----------------------------------------------------
-* Function: initialize_timer2
-*
-* Description: This function Initializes timer2 to
-*			   generate interrupts to control LED blinking.
-*			   Timer2 is configured to generate interrupts
-*			   once the timer reaches the value stored in
-*			   OCR2A
-*
-* return: void
-*--------------------------------------------------------*/
-void initialize_timer2()
-{
-	TIMSK2 = (1 << OCIE2A);//Set interrupt mask for OC2A
-	TCCR2A = ((1 << COM2A1) | (1 << COM2A0)|(1<<WGM21));//Set OC2A on Compare Match
-	TCCR2B = ((1 << CS22) |(1 << CS21) | (1 << CS20));//Set timer2 to CTC, prescaler of 1024
-	OCR2A  = TIMER2_10Hz; //initialize ocra2 to value corresponding to 10Hz interrupt generation
-}

@@ -200,9 +200,7 @@ void SSEG_Write_left_digits(uint8_t val)
 		dig_tens_place = val / 10;
 		dig_ones_place = val % 10;
 		
-		//SPI_MasterTransmit(DIGIT_1);
 		SPI_MasterTransmit(dig_tens_place);
-		//SPI_MasterTransmit(DIGIT_2);
 		SPI_MasterTransmit(dig_ones_place);
 	}		
 }
@@ -237,9 +235,7 @@ void SSEG_Write_right_digits(uint8_t val)
 			dig_ones_place -= 10;
 			dig_tens_place++;
 		}
-		//SPI_MasterTransmit(DIGIT_3);
 		SPI_MasterTransmit(dig_tens_place);
-		//SPI_MasterTransmit(DIGIT_4);
 		SPI_MasterTransmit(dig_ones_place);
 	}	
 }
